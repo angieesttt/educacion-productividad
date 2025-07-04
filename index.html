@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¿Más es mejor? - Artículo de Investigación</title>
@@ -18,15 +19,23 @@
       background-color: #f9f9f9;
       color: #1e1e1e;
     }
-    header.hero {
-      position: relative;
-      background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
-      height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      padding: 2rem;
-      color: white;
-    }
+    header.hero {$1
+  position: relative;
+}
+header.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+header.hero * {
+  position: relative;
+  z-index: 1;
+}
     .hero-text {
       background: rgba(0,0,0,0.5);
       padding: 1rem;
@@ -69,11 +78,9 @@
     section {
       margin-bottom: 3rem;
     }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #d62828;
-    }
+    section h2 {$1
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
     section p {
       margin-bottom: 1rem;
       line-height: 1.7;
@@ -96,11 +103,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
     <img src="https://cdn-icons-png.flaticon.com/512/2991/2991108.png" alt="Icono educación" style="position:absolute; top:2rem; right:2rem; width:80px; height:auto; z-index:1;">
-      <h1>¿Más es mejor?</h1>
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.4);">$1</h1>
       <p>Así afecta la idea de productividad en la educación escolar</p>
     </div>
   </header>
@@ -127,15 +136,15 @@
     <p>“Al que madruga, Dios le ayuda”, dicen en muchos hogares colombianos mientras despiertan a sus hijos aún de noche, alistándolos para ir a estudiar. Pero, ¿y si madrugar no siempre ayuda en el momento de aprender? Este artículo de investigación no pretende promover la vagancia ni incentivar a que los niños dejen de esforzarse, sino cuestionar un modelo educativo que refleja más una lógica de producción que una verdadera apuesta por el desarrollo integral de los jóvenes.</p>
     <p>Esta investigación se centra en analizar críticamente cómo la noción de productividad, entendida como la maximización del tiempo de estudio, ha influido en la implementación de jornadas escolares extendidas en el sistema educativo colombiano. Esta visión se refleja no solo en la cantidad de horas que los estudiantes permanecen en las aulas, sino también en la carga excesiva de tareas para realizar en casa, lo cual extiende aún más su jornada académica.</p>
     <p>Aunque se abordan temas del ámbito escolar, no se profundizará en otras dimensiones como la salud mental, la dinámica familiar o el desarrollo emocional. El análisis se enmarca en el contexto nacional, tomando como referencia datos oficiales, investigaciones internacionales y políticas educativas vigentes en Colombia. No se evaluarán casos particulares de instituciones o regiones, sino que se reflexionará desde una perspectiva crítica sobre las consecuencias académicas de asociar la cantidad de horas escolares con una supuesta mejora en la calidad educativa.</p>
-    <p>Según el Ministerio de Salud, en Colombia el 44,7% de los niños sufre afectaciones en su salud mental; a nivel mundial, la cifra asciende a 168 millones. Gran parte de dichas afecciones están relacionadas con el ámbito académico y laboral. La constante presión académica ha generado una sobrecarga que, lejos de mejorar el rendimiento y el desarrollo integral, limita la creatividad, el descanso y el bienestar emocional de los estudiantes. Esto refleja una cultura que valora más la cantidad de tiempo invertido que la calidad del aprendizaje. En este contexto, Colombia se ha planteado como meta implementar la jornada continua en la mayoría de sus instituciones educativas para 2030; una propuesta que, aunque busca optimizar resultados, plantea interrogantes sobre si realmente responde a las necesidades de los estudiantes.</p>
+    <p>Según el <a href="https://www.minsalud.gov.co" target="_blank">Ministerio de Salud</a>, en Colombia el 44,7% de los niños sufre afectaciones en su salud mental; a nivel mundial, la cifra asciende a 168 millones. Gran parte de dichas afecciones están relacionadas con el ámbito académico y laboral. La constante presión académica ha generado una sobrecarga que, lejos de mejorar el rendimiento y el desarrollo integral, limita la creatividad, el descanso y el bienestar emocional de los estudiantes. Esto refleja una cultura que valora más la cantidad de tiempo invertido que la calidad del aprendizaje. En este contexto, Colombia se ha planteado como meta implementar la jornada continua en la mayoría de sus instituciones educativas para 2030; una propuesta que, aunque busca optimizar resultados, plantea interrogantes sobre si realmente responde a las necesidades de los estudiantes.</p>
   </section>
   <section id="realidad" class="animate__animated animate__fadeInUp">
     <div style="text-align:center;">
       <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Panorama educativo en Colombia" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
     </div>
     <h2>Realidad educativa en Colombia</h2>
-    <p>¿Cómo es el panorama de la educación en Colombia? Por una parte, está la deserción escolar. Según datos del medio informativo La República, en los últimos seis años han cerrado 6.263 colegios: 2.446 (39,1%) privados y 3.817 (60,9%) oficiales. De acuerdo con el Laboratorio de Economía de la Educación de la Universidad Javeriana, esto se debe a tres factores principales: dificultades económicas (37%), negligencia o abandono familiar (21%) y problemas de pertinencia e inclusión (21%). A esto se suma la reducción de nacimientos, que impacta en una menor demanda educativa, reducción de matrícula y cierre de colegios, como explica Gloria Bernal, directora del LEE.</p>
-    <p>Por otro lado, los resultados académicos son preocupantes. En las pruebas PISA 2023, el 71% de los estudiantes colombianos obtuvo un desempeño por debajo del nivel 2 en matemáticas, frente al 31% del promedio de los países de la OCDE. En lectura, fue el 51% frente al 26% de la OCDE, y en ciencias también un 51%, comparado con un 24% internacional. Según el profesor Francisco Cajiao, más de la mitad de los adolescentes colombianos no logra identificar ideas principales, extraer información explícita ni formular opiniones críticas sobre los textos que leen. Solo un 1% alcanza el nivel más alto de desempeño, frente al 7% promedio en la OCDE (El Tiempo, 2024).</p>
+    <p>¿Cómo es el panorama de la educación en Colombia? Por una parte, está la deserción escolar. Según datos del medio informativo <a href="https://www.larepublica.co/educacion" target="_blank">La República</a>, en los últimos seis años han cerrado 6.263 colegios: 2.446 (39,1%) privados y 3.817 (60,9%) oficiales. De acuerdo con el Laboratorio de Economía de la Educación de la <a href="https://www.javeriana.edu.co" target="_blank">Universidad Javeriana</a>, esto se debe a tres factores principales: dificultades económicas (37%), negligencia o abandono familiar (21%) y problemas de pertinencia e inclusión (21%). A esto se suma la reducción de nacimientos, que impacta en una menor demanda educativa, reducción de matrícula y cierre de colegios, como explica Gloria Bernal, directora del LEE.</p>
+    <p>Por otro lado, los resultados académicos son preocupantes. En las pruebas PISA 2023, el 71% de los estudiantes colombianos obtuvo un desempeño por debajo del nivel 2 en matemáticas, frente al 31% del promedio de los países de la <a href="https://www.oecd.org/education/" target="_blank">OCDE</a>. En lectura, fue el 51% frente al 26% de la OCDE, y en ciencias también un 51%, comparado con un 24% internacional. Según el profesor Francisco Cajiao, más de la mitad de los adolescentes colombianos no logra identificar ideas principales, extraer información explícita ni formular opiniones críticas sobre los textos que leen. Solo un 1% alcanza el nivel más alto de desempeño, frente al 7% promedio en la OCDE (<a href="https://www.eltiempo.com/vida/educacion" target="_blank">El Tiempo, 2024</a>).</p>
     <p>Entonces, ¿por qué muchos jóvenes optan por abandonar sus estudios? No solo se trata de deserción literal, sino también de formas más sutiles, como el desinterés y la falta de compromiso. La educación, en teoría, debería ser una vía hacia un futuro mejor. Sin embargo, los estudiantes no siempre la perciben como un espacio de acompañamiento o escucha.</p>
     <p>Aunque abundan noticias sobre deserción y mala calidad, rara vez se pone en el centro la voz de los estudiantes. La mayoría de los análisis se enfocan en estadísticas o factores externos, pero se omite lo más importante: lo que sienten, piensan y necesitan quienes viven el sistema educativo a diario. Desde la experiencia personal, es difícil recordar una sola vez que nos hayan preguntado “¿cómo se sienten?” o “¿qué creen que podría mejorar?”. Las expectativas se centran en el rendimiento, pero se ignora el bienestar emocional y la opinión del estudiante.</p>
     <p>En internet hay pocos registros de entrevistas o encuestas hechas directamente a los estudiantes, aunque abundan los titulares sobre la calidad educativa. También se presentan propuestas, como las del Ministerio de Educación, enfocadas en infraestructura, ampliación de jornada o mejora docente, pero pocas parten del diálogo con quienes más conocen el problema: los estudiantes.</p>
@@ -183,7 +192,7 @@
       <img src="https://images.unsplash.com/photo-1593005513161-00bc3b962f6a?auto=format&fit=crop&w=800&q=80" alt="Niños en educación inicial" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
     </div>
   <h2>Una exigencia que comienza desde el primer año de vida</h2>
-  <p>Según Ortega (2023), una persona promedio dedica alrededor de 81.396 horas de su vida al trabajo: más de 40 años laborales si se calcula un promedio de 41 horas semanales durante 48 semanas al año, desde los 22 hasta los 63 años. Pero antes de eso, ¿qué hace una persona? Estudia. En Colombia, muchos niños ingresan al sistema educativo desde los tres años, e incluso antes, en programas de atención integral a la primera infancia (Ministerio de Educación Nacional). Algunos centros educativos, como el colegio Comfandi El Prado, tienen jornadas que comienzan a las 6:30 a.m. y terminan a las 12:00 p.m.</p>
+  <p>Según Ortega (2023), una persona promedio dedica alrededor de 81.396 horas de su vida al trabajo: más de 40 años laborales si se calcula un promedio de 41 horas semanales durante 48 semanas al año, desde los 22 hasta los 63 años. Pero antes de eso, ¿qué hace una persona? Estudia. En Colombia, muchos niños ingresan al sistema educativo desde los tres años, e incluso antes, en programas de atención integral a la primera infancia (<a href="https://www.mineducacion.gov.co" target="_blank">Ministerio de Educación Nacional</a>). Algunos centros educativos, como el colegio Comfandi El Prado, tienen jornadas que comienzan a las 6:30 a.m. y terminan a las 12:00 p.m.</p>
   <p>Si se comienza tan temprano y con horarios prolongados, ¿qué tiempo queda realmente para el juego libre, el vínculo familiar o el descubrimiento personal? Si desde la infancia los espacios educativos replican el ritmo del mundo laboral, ¿qué efectos tiene este modelo sobre el desarrollo sociocognitivo de los niños? Y, ¿puede el ingreso temprano al sistema educativo tener consecuencias negativas para su bienestar?</p>
   <p>Un estudio realizado en Singapur, publicado en la revista Early Childhood Research Quarterly, analizó cómo las horas que los niños pasan en centros educativos se relacionan con su desarrollo cognitivo y socioemocional. Uno de los primeros factores que puede desencadenar estrés en los niños más pequeños es la separación de su madre o cuidador principal, especialmente cuando ocurre a edades tempranas. Esta ruptura del vínculo en etapas sensibles del desarrollo puede generar una carga emocional significativa, sobre todo si la jornada fuera del hogar se extiende por muchas horas.</p>
   <p>Aunque los centros educativos pueden ser un terreno fértil para el aprendizaje, como lo señalan Vygotsky y Piaget, el estudio también evidencia riesgos importantes cuando estas jornadas se vuelven excesivamente largas. Investigaciones previas han demostrado que los niños que permanecen más de ocho horas diarias en centros educativos presentan niveles elevados de cortisol, la hormona del estrés, sin que esto dependa de la calidad del centro. Este estrés prolongado puede afectar su capacidad para autorregular emociones, comportamientos y atención, habilidades fundamentales para su desarrollo. De hecho, según el modelo de estrés (Obradović, 2016; Sapolsky, 2015), mientras que un nivel moderado de estrés puede ser beneficioso, niveles altos y constantes pueden perjudicar funciones cognitivas superiores, como el funcionamiento ejecutivo, y traducirse en problemas de conducta, dificultad para gestionar las emociones y un impacto negativo en su bienestar general.</p>
@@ -221,7 +230,7 @@
     <i class="fas fa-arrow-up"></i> Volver arriba
   </a>
 </section>
-<section id="interaccion" class="animate__animated animate__fadeInUp">
+<section id="interaccion" class="animate__animated animate__fadeInUp" style="font-family: 'Playfair Display', serif; animation: fadeInUp 1s ease-out; background: linear-gradient(135deg, #fff0f0 0%, #ffecec 100%); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
   <h2>¿Alguna vez sentiste esto?</h2>
   <form action="https://formspree.io/f/mnqeoqrg" method="POST" style="display:flex; flex-direction:column; gap:1rem; max-width:600px; margin:auto;">
     <label>¿Has sentido burnout en la escuela o universidad?</label>
@@ -240,7 +249,7 @@
     <button type="submit" style="background:#d62828; color:white; padding:0.5rem 1rem; border:none; border-radius:5px; cursor:pointer;">Enviar respuestas</button>
   </form>
 </section>
-<section id="descarga" class="animate__animated animate__fadeInUp" style="text-align:center; margin-top:2rem;">
+<section id="descarga" class="animate__animated animate__fadeInUp" style="text-align:center; margin-top:2rem; font-family: 'Playfair Display', serif; background: linear-gradient(135deg, #f0f8ff 0%, #d4e4ff 100%); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
   <h2>Descarga el artículo en PDF</h2>
   <a href="articulo-investigacion.pdf" download style="display:inline-block; background:#003049; color:white; padding:1rem 2rem; border-radius:10px; font-weight:bold; text-decoration:none;">
     <i class="fas fa-file-pdf"></i> Descargar PDF
