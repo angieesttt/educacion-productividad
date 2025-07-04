@@ -7,11 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2d9a66c2c.js" crossorigin="anonymous"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Times New Roman', Times, serif;
     }
     body {
       background-color: #f9f9f9;
@@ -19,7 +20,7 @@
     }
     header.hero {
       position: relative;
-      background: url('https://images.unsplash.com/photo-1601933470928-c1e3087f7b71?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
       height: 70vh;
       display: flex;
       align-items: flex-end;
@@ -92,10 +93,13 @@
       font-size: 0.9rem;
     }
   </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
   <header class="hero">
-    <div class="hero-text">
+    <img src="https://cdn-icons-png.flaticon.com/512/2991/2991108.png" alt="Icono educación" style="position:absolute; top:2rem; right:2rem; width:80px; height:auto; z-index:1;">
       <h1>¿Más es mejor?</h1>
       <p>Así afecta la idea de productividad en la educación escolar</p>
     </div>
@@ -115,14 +119,20 @@
     </ul>
   </nav>
   <main>
-  <section id="intro">
+  <section id="intro" class="animate__animated animate__fadeInUp">
+    <div style="text-align:center;">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="Estudiante madrugando" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
+    </div>
     <h2>Introducción</h2>
     <p>“Al que madruga, Dios le ayuda”, dicen en muchos hogares colombianos mientras despiertan a sus hijos aún de noche, alistándolos para ir a estudiar. Pero, ¿y si madrugar no siempre ayuda en el momento de aprender? Este artículo de investigación no pretende promover la vagancia ni incentivar a que los niños dejen de esforzarse, sino cuestionar un modelo educativo que refleja más una lógica de producción que una verdadera apuesta por el desarrollo integral de los jóvenes.</p>
     <p>Esta investigación se centra en analizar críticamente cómo la noción de productividad, entendida como la maximización del tiempo de estudio, ha influido en la implementación de jornadas escolares extendidas en el sistema educativo colombiano. Esta visión se refleja no solo en la cantidad de horas que los estudiantes permanecen en las aulas, sino también en la carga excesiva de tareas para realizar en casa, lo cual extiende aún más su jornada académica.</p>
     <p>Aunque se abordan temas del ámbito escolar, no se profundizará en otras dimensiones como la salud mental, la dinámica familiar o el desarrollo emocional. El análisis se enmarca en el contexto nacional, tomando como referencia datos oficiales, investigaciones internacionales y políticas educativas vigentes en Colombia. No se evaluarán casos particulares de instituciones o regiones, sino que se reflexionará desde una perspectiva crítica sobre las consecuencias académicas de asociar la cantidad de horas escolares con una supuesta mejora en la calidad educativa.</p>
     <p>Según el Ministerio de Salud, en Colombia el 44,7% de los niños sufre afectaciones en su salud mental; a nivel mundial, la cifra asciende a 168 millones. Gran parte de dichas afecciones están relacionadas con el ámbito académico y laboral. La constante presión académica ha generado una sobrecarga que, lejos de mejorar el rendimiento y el desarrollo integral, limita la creatividad, el descanso y el bienestar emocional de los estudiantes. Esto refleja una cultura que valora más la cantidad de tiempo invertido que la calidad del aprendizaje. En este contexto, Colombia se ha planteado como meta implementar la jornada continua en la mayoría de sus instituciones educativas para 2030; una propuesta que, aunque busca optimizar resultados, plantea interrogantes sobre si realmente responde a las necesidades de los estudiantes.</p>
   </section>
-  <section id="realidad">
+  <section id="realidad" class="animate__animated animate__fadeInUp">
+    <div style="text-align:center;">
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Panorama educativo en Colombia" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
+    </div>
     <h2>Realidad educativa en Colombia</h2>
     <p>¿Cómo es el panorama de la educación en Colombia? Por una parte, está la deserción escolar. Según datos del medio informativo La República, en los últimos seis años han cerrado 6.263 colegios: 2.446 (39,1%) privados y 3.817 (60,9%) oficiales. De acuerdo con el Laboratorio de Economía de la Educación de la Universidad Javeriana, esto se debe a tres factores principales: dificultades económicas (37%), negligencia o abandono familiar (21%) y problemas de pertinencia e inclusión (21%). A esto se suma la reducción de nacimientos, que impacta en una menor demanda educativa, reducción de matrícula y cierre de colegios, como explica Gloria Bernal, directora del LEE.</p>
     <p>Por otro lado, los resultados académicos son preocupantes. En las pruebas PISA 2023, el 71% de los estudiantes colombianos obtuvo un desempeño por debajo del nivel 2 en matemáticas, frente al 31% del promedio de los países de la OCDE. En lectura, fue el 51% frente al 26% de la OCDE, y en ciencias también un 51%, comparado con un 24% internacional. Según el profesor Francisco Cajiao, más de la mitad de los adolescentes colombianos no logra identificar ideas principales, extraer información explícita ni formular opiniones críticas sobre los textos que leen. Solo un 1% alcanza el nivel más alto de desempeño, frente al 7% promedio en la OCDE (El Tiempo, 2024).</p>
@@ -131,7 +141,10 @@
     <p>En internet hay pocos registros de entrevistas o encuestas hechas directamente a los estudiantes, aunque abundan los titulares sobre la calidad educativa. También se presentan propuestas, como las del Ministerio de Educación, enfocadas en infraestructura, ampliación de jornada o mejora docente, pero pocas parten del diálogo con quienes más conocen el problema: los estudiantes.</p>
     <p>Frente a este panorama, surge una propuesta con fuerza en los últimos años: la implementación de la Jornada Única o Continua. Esta estrategia, promovida como una vía para mejorar el rendimiento académico y brindar una formación más integral, reorganiza el tiempo escolar para fortalecer competencias cognitivas, socioemocionales y ciudadanas. ¿Qué tan acertada resulta esta medida en un contexto donde aún no se ha resuelto lo más esencial: escuchar y comprender a quienes viven el sistema educativo?</p>
   </section>
-<section id="jornada">
+<section id="jornada" class="animate__animated animate__fadeInUp">
+    <div style="text-align:center;">
+      <img src="https://images.unsplash.com/photo-1603203366818-0974f620ee76?auto=format&fit=crop&w=800&q=80" alt="Estudiantes en jornada única" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
+    </div>
   <h2>La Jornada Única: ¿respuesta real o medida improvisada?</h2>
   <p>“Debo admitir que empecé a desarrollar gran parte de mi personalidad cuando salí del colegio”, afirma con sinceridad un egresado del Colegio Mayor de la Ciudad de Buga, institución reconocida por implementar el modelo de jornada continua. Para él, el enfoque intensivo en lo académico dejó poco espacio para explorar otros aspectos de su vida: “Lo que quiero decir con ‘personalidad’ es que, en realidad, tenía muy poco tiempo para socializar o hacer otras actividades. Solo me dedicaba a estudiar. Entraba en la mañana y, en la tarde, ya llegaba a casa agotado”.</p>
   <p>Esa falta de tiempo para el desarrollo personal y social se reflejó en su vida adulta, especialmente al enfrentarse al mundo laboral. “Me di cuenta de que no tenía tanta personalidad la primera vez que hice una entrevista de trabajo. Tenía un compañero que no le fue muy bien académicamente, pero por su actitud lo aceptaron. En cambio, a mí me vieron como un chico con buenas calificaciones, pero sin personalidad”.</p>
@@ -144,11 +157,14 @@
   <p>En cuanto a la intensidad horaria, según el MEN y el Decreto 2105 de 2017, se establece:</p>
   <p><em>Imagen sacada de la página principal del Ministerio de Educación.</em></p>
 </section>
-<section id="estres">
+<section id="estres" class="animate__animated animate__fadeInUp">
+    <div style="text-align:center;">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Estrés académico" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
+    </div>
   <h2>¿Qué pasa con el exceso de horas en el estudio?</h2>
   <p>El estrés académico es un fenómeno fisiológico y psicológico. Usualmente se define como un estado de tensión constante generado por las exigencias del entorno educativo que exceden los recursos personales del estudiante para afrontarlas (Barraza, 2007). Es una condición persistente que afecta tanto al rendimiento académico como a la salud mental del individuo. Suele manifestarse de diversas maneras, como ansiedad, desmotivación, agotamiento y dificultad para concentrarse.</p>
   <p>En el contexto contemporáneo, las exigencias académicas se han intensificado debido a la creciente competitividad, y el estrés se ha convertido en un problema cada vez más frecuente y preocupante. Los estudiantes, especialmente aquellos en los niveles superiores de su formación, se ven presionados a equilibrar sus estudios, actividades extracurriculares y vida personal, lo que puede generar altos niveles de estrés. La psicología educativa ha estudiado este fenómeno; Azarus y Folkman (1986) postulan que el estrés no depende únicamente de factores externos, sino de la interpretación subjetiva de estos. Dicho de otra manera, un examen puede ser visto como un desafío para un estudiante, mientras que para otro representa una amenaza. La autoeficacia percibida, el contexto social, el apoyo familiar y las habilidades de afrontamiento influyen profundamente en la experiencia del estrés.</p>
-  <p>Para ilustrar mejor este fenómeno en un contexto específico, analizamos un estudio realizado en 2023 en Villavicencio, Meta (ver estudio completo).</p>
+  <p>Para ilustrar mejor este fenómeno en un contexto específico, analizamos un estudio realizado en 2023 en Villavicencio, Meta (<a href="https://www.redalyc.org/articulo.oa?id=345939852006" target="_blank">ver estudio completo</a>).</p>
   <p>El estudio se aplicó a estudiantes de grado once de una institución educativa pública. Con un enfoque cuantitativo, la investigación se basó en el uso del Inventario SISCO del Estrés Académico, una herramienta diseñada por Barraza en 2007 que permite evaluar diferentes aspectos del estrés, tales como los estresores, los síntomas y las estrategias de afrontamiento.</p>
   <p>Para la metodología, se utilizó una encuesta anónima estructurada con un diseño cuantitativo-descriptivo. La mayoría de los estudiantes reportaron niveles altos de estrés académico.</p>
   <p>Entre los estresores más frecuentes se destacan el exceso de tareas, la presión por alcanzar calificaciones sobresalientes, el manejo inadecuado del tiempo y las exigencias excesivas y poco realistas por parte de los profesores.</p>
@@ -159,10 +175,13 @@
   <p>Si bien el estrés académico puede ser una parte natural de la vida estudiantil, su persistencia sin estrategias adecuadas para gestionarlo puede derivar en burnout. Este concepto, popularizado por el psicólogo Herbert Freudenberger en los años 70, se refiere a un agotamiento emocional extremo, acompañado de despersonalización constante. En el contexto académico, el burnout se caracteriza por una pérdida de motivación, una sensación de desconexión con las actividades académicas y una disminución en la autoeficacia.</p>
   <p>Este fenómeno trasciende el simple agotamiento físico o mental, convirtiéndose en una condición persistente que puede prolongarse hasta la etapa profesional y laboral. Aquellos estudiantes que experimentan burnout durante su paso por la educación superior podrían arrastrar las consecuencias de este estrés a lo largo de su carrera, lo cual podría traducirse en una menor implicación en el ámbito laboral, baja productividad y afectaciones significativas en su salud mental.</p>
   <p>Las tasas de burnout académico varían ampliamente entre un 8 % y más del 60 %, dependiendo del país, el grupo estudiado y los criterios diagnósticos empleados. Se ha observado que la dimensión más afectada es el agotamiento emocional, alcanzando cifras de hasta un 70,6 % en estudiantes universitarios.</p>
-  <p>Un estudio realizado por el Departamento de Psicología de la Universidad Nacional de Colombia (UNAL) en el segundo semestre de 2022 encontró que, de 108 estudiantes encuestados, cerca del 53 % mostró niveles elevados de burnout académico en al menos dos de sus tres dimensiones: agotamiento, cinismo y percepción de autoeficacia (ver artículo).</p>
+  <p>Un estudio realizado por el Departamento de Psicología de la Universidad Nacional de Colombia (UNAL) en el segundo semestre de 2022 encontró que, de 108 estudiantes encuestados, cerca del 53 % mostró niveles elevados de burnout académico en al menos dos de sus tres dimensiones: agotamiento, cinismo y percepción de autoeficacia (<a href="https://revistas.unal.edu.co/index.php/psicologia/article/view/88964" target="_blank">ver artículo</a>).</p>
   <p>Estos resultados resaltan la necesidad de prevenir que más estudiantes lleguen a este punto crítico. Es fundamental implementar estrategias de afrontamiento saludables, promover un equilibrio entre la vida académica y personal, y fomentar un entorno educativo que reduzca las presiones innecesarias.</p>
 </section>
-<section id="infancia">
+<section id="infancia" class="animate__animated animate__fadeInUp">
+    <div style="text-align:center;">
+      <img src="https://images.unsplash.com/photo-1593005513161-00bc3b962f6a?auto=format&fit=crop&w=800&q=80" alt="Niños en educación inicial" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:1rem;">
+    </div>
   <h2>Una exigencia que comienza desde el primer año de vida</h2>
   <p>Según Ortega (2023), una persona promedio dedica alrededor de 81.396 horas de su vida al trabajo: más de 40 años laborales si se calcula un promedio de 41 horas semanales durante 48 semanas al año, desde los 22 hasta los 63 años. Pero antes de eso, ¿qué hace una persona? Estudia. En Colombia, muchos niños ingresan al sistema educativo desde los tres años, e incluso antes, en programas de atención integral a la primera infancia (Ministerio de Educación Nacional). Algunos centros educativos, como el colegio Comfandi El Prado, tienen jornadas que comienzan a las 6:30 a.m. y terminan a las 12:00 p.m.</p>
   <p>Si se comienza tan temprano y con horarios prolongados, ¿qué tiempo queda realmente para el juego libre, el vínculo familiar o el descubrimiento personal? Si desde la infancia los espacios educativos replican el ritmo del mundo laboral, ¿qué efectos tiene este modelo sobre el desarrollo sociocognitivo de los niños? Y, ¿puede el ingreso temprano al sistema educativo tener consecuencias negativas para su bienestar?</p>
@@ -173,7 +192,7 @@
   <p>Frente a este panorama, la calidad de los vínculos que los niños construyen, tanto con sus padres como con sus docentes, se vuelve aún más crucial. Así como el apego madre-hijo genera seguridad emocional para explorar el mundo, el vínculo con los docentes puede fomentar la participación en clase y el desarrollo de habilidades sociales si se da en un ambiente afectivo y respetuoso. Sin embargo, cuando las condiciones no permiten este tipo de vínculo, debido a la saturación de tiempo o la rigidez en el ambiente educativo, los riesgos no solo son académicos, sino profundamente humanos.</p>
   <p>A pesar de los interrogantes que aún persisten sobre los efectos de la jornada continua, lo cierto es que esta parece ser una de las apuestas del gobierno. Para el año 2030, se proyecta que la mayoría de las instituciones educativas no solo recibirán a los niños desde las 6:30 a.m., sino que también implementarán la jornada continua.</p>
 </section>
-<section id="propuestas">
+<section id="propuestas" class="animate__animated animate__fadeInUp">
   <h2>Posibles rutas de mejora</h2>
   <p>Uno de los errores más graves del sistema educativo colombiano es que insiste en tomar decisiones por los estudiantes sin realmente escucharlos. Se crean reformas, se imponen nuevas jornadas, se ajustan planes de estudio, pero rara vez se pregunta a quienes viven esas decisiones en carne propia qué opinan o cómo se sienten. ¿En qué momento el estudiante dejó de ser protagonista para convertirse en una cifra o en una meta por cumplir?</p>
   <p>Mucho se habla de mejorar la calidad educativa, de formar ciudadanos críticos, de reducir la deserción. Pero ¿cómo lograrlo si el sistema no crea espacios reales de participación estudiantil? No basta con mencionar al estudiante en los documentos oficiales o en los discursos públicos. Hace falta abrir canales efectivos donde puedan expresar sus ideas, sus miedos, sus frustraciones, pero también sus propuestas.</p>
@@ -183,7 +202,7 @@
   <p>Por último, habría que dejar de medir el éxito educativo solo por los puntajes de las pruebas estandarizadas. ¿Qué sentido tiene obtener un alto Icfes si los estudiantes se sienten vacíos, agotados o desmotivados? ¿Qué tipo de ciudadanos se están formando cuando el sistema premia más la obediencia que el pensamiento crítico?</p>
   <p>Escuchar a los estudiantes es el primer paso para construir una educación más justa, más humana y verdaderamente transformadora.</p>
 </section>
-<section id="conclusion">
+<section id="conclusion" class="animate__animated animate__fadeInUp">
   <h2>Conclusión</h2>
   <p>A lo largo de esta investigación se ha evidenciado cómo el sistema educativo colombiano, en su afán por mejorar indicadores de calidad, ha adoptado una lógica de productividad que termina por descuidar lo más esencial: la experiencia humana del estudiante. La implementación de la Jornada Única, pensada como una estrategia para fortalecer la formación integral y mejorar el rendimiento académico, ha demostrado no ser una respuesta suficiente, y mucho menos adecuada, si no se acompaña de un verdadero cambio estructural que priorice el bienestar, la escucha y el respeto por las particularidades de cada estudiante.</p>
   <p>Los datos, tanto nacionales como internacionales, así como los testimonios analizados, permiten comprender que el problema no radica únicamente en la cantidad de horas dentro del aula, sino en cómo esas horas son vividas. En Colombia, muchas instituciones han replicado una jornada extendida que reproduce el modelo de eficiencia laboral: horarios rígidos, presión por resultados, sobrecarga de tareas y poco margen para el desarrollo emocional, la creatividad o el descanso. Esta forma de escolarización no solo ha derivado en altos niveles de estrés académico y burnout, sino que ha impactado negativamente en la motivación, la salud mental y el sentido mismo del proceso educativo.</p>
@@ -192,14 +211,75 @@
   <p>El panorama no es alentador si se insiste en una visión que valora más el rendimiento académico que el bienestar personal, más los resultados estandarizados que el desarrollo humano, más la obediencia que la capacidad crítica. Por eso, el camino hacia una educación más justa no pasa simplemente por reorganizar el horario escolar, sino por transformar profundamente los principios que guían la práctica educativa. Esto implica replantear los fines de la educación, revisar las metodologías, valorar los vínculos afectivos en el aula y, sobre todo, construir una escuela donde el estudiante vuelva a ser protagonista.</p>
   <p>Una educación verdaderamente transformadora no se mide por el número de horas en clase ni por los resultados en pruebas externas, sino por la capacidad de formar personas sensibles, reflexivas, seguras de sí mismas y comprometidas con su entorno. Solo cuando el sistema entienda que más no siempre es mejor, podrá empezar a trazar un camino hacia el cambio que tantas generaciones han esperado.</p>
 </section>
-<section id="cronica">
+<section id="cronica" class="animate__animated animate__fadeInUp">
   <h2>Crónica</h2>
   <p><em>Aquí irá el texto completo de la crónica. Puedes narrar experiencias personales, casos particulares o reflexiones vivenciales que complementen la investigación, como una historia con voz propia.</em></p>
   <p><strong>Ejemplo de inicio:</strong> “Era jueves y el colegio parecía más gris de lo normal. A las 6:30 de la mañana ya estaban todos formados, pero pocos estaban realmente despiertos...”</p>
 </section>
+<section style="text-align:center; margin-top: 3rem;">
+  <a href="#intro" style="display:inline-block; background:#d62828; color:white; padding:0.75rem 1.5rem; border-radius:8px; text-decoration:none; font-weight:bold;">
+    <i class="fas fa-arrow-up"></i> Volver arriba
+  </a>
+</section>
+<section id="interaccion" class="animate__animated animate__fadeInUp">
+  <h2>¿Alguna vez sentiste esto?</h2>
+  <form action="https://formspree.io/f/mnqeoqrg" method="POST" style="display:flex; flex-direction:column; gap:1rem; max-width:600px; margin:auto;">
+    <label>¿Has sentido burnout en la escuela o universidad?</label>
+    <select name="burnout">
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+      <option value="no_se">No estoy segurx</option>
+    </select>
+    <label>¿Qué factores te generan más presión?</label>
+    <input type="text" name="factores" required>
+    <label>¿Te gustaría recibir recomendaciones para lidiar con esto?</label>
+    <select name="respuestas">
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+    <button type="submit" style="background:#d62828; color:white; padding:0.5rem 1rem; border:none; border-radius:5px; cursor:pointer;">Enviar respuestas</button>
+  </form>
+</section>
+<section id="descarga" class="animate__animated animate__fadeInUp" style="text-align:center; margin-top:2rem;">
+  <h2>Descarga el artículo en PDF</h2>
+  <a href="articulo-investigacion.pdf" download style="display:inline-block; background:#003049; color:white; padding:1rem 2rem; border-radius:10px; font-weight:bold; text-decoration:none;">
+    <i class="fas fa-file-pdf"></i> Descargar PDF
+  </a>
+</section>
+<div id="comentario-flotante" style="position:fixed; bottom:1.5rem; right:1.5rem; z-index:999;">
+  <a href="#interaccion" style="background:#d62828; color:white; padding:0.75rem 1rem; border-radius:50%; font-size:1.2rem; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+    💬
+  </a>
+</div>
 </main>
   <footer>
+  <div style="margin-bottom:1rem;">
+    <a href="https://instagram.com" target="_blank" style="color:white; margin:0 0.5rem;"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank" style="color:white; margin:0 0.5rem;"><i class="fab fa-twitter"></i></a>
+    <a href="mailto:contacto@laorejaescolar.com" style="color:white; margin:0 0.5rem;"><i class="fas fa-envelope"></i></a>
+  </div>
     © 2025 por Angie Estupiñán, Manuela Pérez y Estefanía Lozano. Investigación crítica sobre educación escolar en Colombia.
   </footer>
+<script>
+  const form = document.querySelector('form[action*="formspree"]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        alert('¡Gracias por responder! ❤️ Tu opinión nos ayuda a transformar la educación.');
+        form.reset();
+      } else {
+        alert('Hubo un problema al enviar el formulario. Intenta de nuevo más tarde.');
+      }
+    });
+  });
+</script>
 </body>
 </html>
